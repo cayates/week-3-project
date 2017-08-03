@@ -1,22 +1,38 @@
 #wrapper {
-    background-color: white;
-    margin: 40px;
+    background-color: darkgray;
+    margin: 0; 
+    padding: 50px;
+    /* background-image: url("http://www.clipartlord.com/wp-content/uploads/2014/02/duckling3-189x240.png"); */
 }
-h1 {
+body {
+    margin-left: 0;
+    margin-right: 0;
+}
+p {
     text-align: center;
+    font-size: 40px;
+    background-color: yellow;
+    padding-bottom: 40px;
+    padding-top: 35px;
+    margin-top: -8px;
+    margin-bottom: 0;
 }
 .calculator {
     background-color: green;
-    height: 700px;
+    height: 400px;
     width: 50%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    text-align: center;
+    border-radius: 5px;
+    padding: 30px;
 }
 .row1 {
     display: flex;
     height: 20%;
+    border-radius: 5px;
 }
 .row2 {
     display: flex;
@@ -40,30 +56,54 @@ h1 {
 }
 .numbervalue {
     padding: 20px;
-    font-size: 70px;
+    font-size: 30px;
+    width: 25%;
+    background-color: lightgreen;
+    margin: 5px;
+    border-radius: 10px
 }
 
 .operator {
     padding: 20px;
-    font-size: 70px;
-
+    font-size: 30px;
+    width: 25%;
+    background-color: lightcyan;
+    margin: 5px;
+    border-radius: 10px
 }
 
 .clear {
     padding: 20px;
-    font-size: 70px;
-
+    font-size: 30px;
+    width: 19.5%;
+    background-color: wheat;
+    margin: 5px;
+    border-radius: 10px
 }
 
 .value {
     padding: 20px;
-    font-size: 70px;
-
+    font-size: 30px;
+    width: 75%;
+    background-color: lightcoral;
+    margin: 5px;
+    border-radius: 10px
 }
 
 .decimal {
     padding: 20px;
-    font-size: 70px;
-
+    font-size: 30px;
+    width: 25%;
+    background-color: lightgreen;
+    margin: 5px;
+    border-radius: 10px
+}
+.equals {
+    padding: 20px;
+    font-size: 30px;
+    width: 25%;
+    background-color: lightgreen;
+    margin: 5px;
+    border-radius: 10px
 }
 
