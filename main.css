@@ -2,7 +2,7 @@
     background-color: darkgray;
     margin: 0; 
     padding: 50px;
-    /* background-image: url("http://www.clipartlord.com/wp-content/uploads/2014/02/duckling3-189x240.png"); */
+    background-image: url("http://www.clipartlord.com/wp-content/uploads/2014/02/duckling3-189x240.png"); 
 }
 body {
     margin-left: 0;
@@ -26,7 +26,7 @@ p {
     flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 12px;
     padding: 30px;
 }
 .row1 {
