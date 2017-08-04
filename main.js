@@ -100,7 +100,10 @@ buttonNine.addEventListener("click", nineFunction);
 function nineFunction (){
     totalButton.textContent += "9";
 }
-
+eraseButton.addEventListener("click", clearFunction);
+function clearFunction(){
+    totalButton.textContent = "";
+}
 
 // event listeners and functions ends here
 
