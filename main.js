@@ -51,6 +51,7 @@ let minusButton = document.getElementById("subtractionButton");
 let decButton = document.getElementById("decimalButton");
 let equalButton = document.getElementById("equalsButton");
 let adderButton = document.getElementById("additionButton");
+let buttonZero = document.getElementById("buttonNum0");
 let buttonOne = document.getElementById("buttonNum1");
 let buttonTwo = document.getElementById("buttonNum2");
 let buttonThree = document.getElementById("buttonNum3");
@@ -64,6 +65,11 @@ let buttonNine = document.getElementById("buttonNum9");
 
 // adding event listeners and function - push to total button
 
+
+buttonZero.addEventListener("click", zeroFunction);
+function zeroFunction(){
+    totalButton.textContent += "0";
+}
 buttonOne.addEventListener("click", oneFunction);
 function oneFunction (){
     totalButton.textContent += "1";
@@ -100,16 +106,37 @@ buttonNine.addEventListener("click", nineFunction);
 function nineFunction (){
     totalButton.textContent += "9";
 }
+decButton.addEventListener("click", decFunction);
+function decFunction (){
+    totalButton.textContent += ".";
+}
 eraseButton.addEventListener("click", clearFunction);
 function clearFunction(){
-    totalButton.textContent = "";
+    totalButton.textContent += "";
 }
+divisionButton.addEventListener("click", divisionFunction);
+function divisionFunction(){
+    totalButton.textContent += "/";
+}
+multiplicationButton.addEventListener("click", mulFunction);
+function mulFunction(){
+    totalButton.textContent += "x";
+}
+minusButton.addEventListener("click", subFunction);
+function subFunction(){
+    totalButton.textContent += "-";
+}
+adderButton.addEventListener("click", addFunction);
+function addFunction(){
+    totalButton.textContent += "+";
+}
+
 
 // event listeners and functions ends here
 
-let string = ""
+// let string = ""
 
-console.log(eval(string));
-eval (string);
+// console.log(eval(string));
+// eval (string);
 
-document.getElementsByClassName("row1", "row2", "row3", "row4", "row5");
+// document.getElementsByClassName("row1", "row2", "row3", "row4", "row5");
