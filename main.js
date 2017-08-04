@@ -40,10 +40,17 @@ function calculateValue (erase, calculate, zero, one, two, three, four, five, si
     // console.log(templateLiteral);
     return templateLiteral;
 }
-htmlContent.innerHTML = calculateValue("C", "Quackulate", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ".", "=", "+", "-", "x", "/");
+htmlContent.innerHTML = calculateValue("C", "", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ".", "=", "+", "-", "x", "/");
 
 // variables to be able to add my event listener
-
+let eraseButton = document.getElementById("clearButton");
+let totalButton = document.getElementById("valueButton");
+let divisionButton = document.getElementById("dividerButton");
+let multiplicationButton = document.getElementById("multiplierButton");
+let minusButton = document.getElementById("subtractionButton");
+let decButton = document.getElementById("decimalButton");
+let equalButton = document.getElementById("equalsButton");
+let adderButton = document.getElementById("additionButton");
 let buttonOne = document.getElementById("buttonNum1");
 let buttonTwo = document.getElementById("buttonNum2");
 let buttonThree = document.getElementById("buttonNum3");
@@ -55,10 +62,47 @@ let buttonEight = document.getElementById("buttonNum8");
 let buttonNine = document.getElementById("buttonNum9");
 
 
-// adding event listeners and function
+// adding event listeners and function - push to total button
 
-// buttonOne.addEventListener("click", oneFunction)
+buttonOne.addEventListener("click", oneFunction);
+function oneFunction (){
+    totalButton.textContent += "1";
+}
+buttonTwo.addEventListener("click", twoFunction);
+function twoFunction (){
+    totalButton.textContent += "2";
+}
+buttonThree.addEventListener("click", threeFunction);
+function threeFunction (){
+    totalButton.textContent += "3";
+}
+buttonFour.addEventListener("click", fourFunction);
+function fourFunction (){
+    totalButton.textContent += "4";
+}
+buttonFive.addEventListener("click", fiveFunction);
+function fiveFunction (){
+    totalButton.textContent += "5";
+}
+buttonSix.addEventListener("click", sixFunction);
+function sixFunction (){
+    totalButton.textContent += "6";
+}
+buttonSeven.addEventListener("click", sevenFunction);
+function sevenFunction (){
+    totalButton.textContent += "7";
+}
+buttonEight.addEventListener("click", eightFunction);
+function eightFunction (){
+    totalButton.textContent += "8";
+}
+buttonNine.addEventListener("click", nineFunction);
+function nineFunction (){
+    totalButton.textContent += "9";
+}
 
+
+// event listeners and functions ends here
 
 let string = ""
 
