@@ -122,7 +122,7 @@ function divisionFunction(){
 }
 multiplicationButton.addEventListener("click", mulFunction);
 function mulFunction(){
-    totalButton.textContent += " x ";
+    totalButton.textContent += " * ";
 }
 minusButton.addEventListener("click", subFunction);
 function subFunction(){
