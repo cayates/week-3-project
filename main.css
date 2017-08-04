@@ -5,17 +5,17 @@
     background-image: url("http://www.clipartlord.com/wp-content/uploads/2014/02/duckling3-189x240.png"); 
 }
 body {
-    margin-left: 0;
-    margin-right: 0;
+    margin:0;
 }
 p {
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     background-color: yellow;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
     padding-top: 35px;
     margin-top: -8px;
     margin-bottom: 0;
+    font-family: fantasy;
 }
 .calculator {
     background-color: green;
@@ -50,10 +50,10 @@ p {
 
 }
 .row5 {
-    display: flex;
+    display: flex;                                             
     height: 20%;
 
-}
+}                                                               
 .numbervalue {
     padding: 20px;
     font-size: 30px;
@@ -107,3 +107,10 @@ p {
     border-radius: 10px
 }
 
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    background-color: yellow;
+    font-family: fantasy;
+}
