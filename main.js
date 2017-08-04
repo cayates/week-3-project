@@ -43,8 +43,11 @@ function calculateValue (erase, calculate, zero, one, two, three, four, five, si
 htmlContent.innerHTML = calculateValue("C", "", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ".", "=", "+", "-", "x", "/");
 
 // variables to be able to add my event listener
+
 let eraseButton = document.getElementById("clearButton");
+//this is what the clicks are being pushed to
 let totalButton = document.getElementById("valueButton");
+//this ends where the clicks are being pushed
 let divisionButton = document.getElementById("dividerButton");
 let multiplicationButton = document.getElementById("multiplierButton");
 let minusButton = document.getElementById("subtractionButton");
@@ -61,7 +64,6 @@ let buttonSix = document.getElementById("buttonNum6");
 let buttonSeven = document.getElementById("buttonNum7");
 let buttonEight = document.getElementById("buttonNum8");
 let buttonNine = document.getElementById("buttonNum9");
-
 
 // adding event listeners and function - push to total button
 
@@ -112,31 +114,46 @@ function decFunction (){
 }
 eraseButton.addEventListener("click", clearFunction);
 function clearFunction(){
-    totalButton.textContent += "";
+    totalButton.textContent = "";
 }
 divisionButton.addEventListener("click", divisionFunction);
 function divisionFunction(){
-    totalButton.textContent += "/";
+    totalButton.textContent += " / ";
 }
 multiplicationButton.addEventListener("click", mulFunction);
 function mulFunction(){
-    totalButton.textContent += "x";
+    totalButton.textContent += " x ";
 }
 minusButton.addEventListener("click", subFunction);
 function subFunction(){
-    totalButton.textContent += "-";
+    totalButton.textContent += " - ";
 }
 adderButton.addEventListener("click", addFunction);
 function addFunction(){
-    totalButton.textContent += "+";
+    totalButton.textContent += " + ";
 }
 
-
 // event listeners and functions ends here
+
+// this is my eval function, may take some work
+
+equalButton.addEventListener("click", calculationFunction);
+    function calculationFunction(){
+        // totalButton.textContent += "sup bro monkey";
+        eval(totalButton.innerHTML);
+        // endValue = eval(totalButton.innerHTML); it turns out that this wasn't needed , just added an extra step that made the algorithm redundant
+        totalButton.textContent = eval(totalButton.innerHTML);
+    }
+
+
+// let equalButton = document.getElementById("equalsButton");
 
 // let string = ""
 
 // console.log(eval(string));
+
+// let equalButton = document.getElementById("equalsButton");
+
 // eval (string);
 
 // document.getElementsByClassName("row1", "row2", "row3", "row4", "row5");
